@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(223, 144, 158);
+}
+
+H1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.image-container {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s, border 0.3s;
+}
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid transparent;
+    border-radius: 0; 
+}
+.image-container img:hover {
+    transform: rotate(15deg);
+}
+
+.image-container {
+    display: inline-block;
+    margin: 50px;
+    position: relative;
+}
+
+/* Shapes */
+.square img {
+    width: 100px;
+    height: 100px;
+}
+
+.circle img {
+    border-radius: 50%;
+}
+
+.triangle img {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.star img {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* Filters */
+.default img{
+    filter: grayscale(0%);
+}
+.black img {
+    filter: grayscale(100%);
+}
+
+.inverted img {
+    filter: invert(100%);
+}
+
+.brightness img {
+    filter: brightness(150%);
+}
+
+/* Colors */
+.blue img:hover {
+    border-color: blue;
+}
+.red img:hover {
+    border-color: red;
+}
+.yellow img:hover {
+    border-color: yellow;
+}
+.green img:hover {
+    border-color: green;
+}
+
+/* Border */
+.solid img:hover {
+    border-style: solid;
+}
+.dotted img:hover {
+    border-style: dotted;
+}
+.double img:hover {
+    border-style: double;
+}
+.dashed img:hover {
+    border-style: dashed;
+}
+
+/* Border size */
+.one img:hover {
+    border-width: 1px;
+}
+
+.five img:hover {
+    border-width: 5px;
+}
+
+.ten img:hover {
+    border-width: 10px;
+}
+
+.twenty img:hover {
+    border-width: 20px;
+}
